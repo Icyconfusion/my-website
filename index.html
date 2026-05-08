@@ -7,20 +7,27 @@
 
  
     <style>
-.flex-square {
-    width: 50%;
-    aspect-ratio: 1 / 1;
-    background: #242020;
-}
-.flex-square2 {
+
+.container {
+    display: flex;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    background: #242020;
 }
-.flex-squarewhite {
-    width: 50%;
-    aspect-ratio: 1 / 1;
-    background: #ffffff;
+
+.left,
+.right {
+    flex: 1;
+}
+
+.left {
+    padding: 20px;
+    background: #242020;
+    color: white;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
       
 </style>
@@ -36,15 +43,24 @@
  <!-- Elements -->
 
   <!-- Div 1 -->
+<div class="container">
 
-<div class="flex-square">
-  <h1 class="text-center text-white">DD sim wheel</h1>
+    <div class="left">
+       <h1 class="text-center text-white">DD sim wheel</h1>
+      
   <p class="text-left text-white">The DD sim wheel is a project I designed for Hackclub Stasis YSWS. It is designed to replicate the feel of commercial sim racing wheelbases, which can deliver high torques. This creates an extremely realistic feel, as if you are driving a real racing car. Sim racing is a passion of mine, so it was a real joy to design this, and I learned a lot designing my own motor driver. </p>
 
 
 <a href="https://github.com/Icyconfusion/DD-sim-wheel" class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">DD Sim Wheel</a>
 
-  </div>
+
+    </div>
+
+    <div class="right">
+        <img src="image1.jpg" class="carousel-image">
+    </div>
+
+</div>
 
 
 
